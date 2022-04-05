@@ -1,0 +1,42 @@
+
+// 1280
+@mixin xl {
+  @media screen and (min-width: $desktop-max) {
+    @content;
+  }
+}
+
+// 1024
+@mixin md {
+  @media screen and (min-width: $laptop-max) {
+    @content;
+  }
+}
+
+// 767
+@mixin sm {
+  @media screen and (min-width: $tablet-max) {
+    @content;
+  }
+}
+
+// 576
+@mixin xs {
+  @media screen and (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+// 321
+@mixin xxm {
+  @media screen and (min-width: $mobile-min-up) {
+    @content;
+  }
+}
+
+// 320
+@mixin xxs {
+  @media screen and (max-width: $mobile-min) {
+    @content;
+  }
+}
